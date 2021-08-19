@@ -1,0 +1,7 @@
+{
+    "require": {
+        "kktsvetkov/krumo": "^0.4.4",
+        "bref/bref": "^1.2",
+        "guzzlehttp/guzzle": "^7.3"
+    }
+}
