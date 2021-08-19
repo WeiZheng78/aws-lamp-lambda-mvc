@@ -24,7 +24,7 @@ Resources:
       Timeout: 30
       Tracing: Active
       Layers:
-        - 'arn:aws:lambda:ap-southeast-2:209497400698:layer:php-73-fpm:25'
+        - 'arn:aws:lambda:ap-southeast-1:209497400698:layer:php-73-fpm:25'
       Events:
         DynamicRequestsRoot:
           Type: Api
