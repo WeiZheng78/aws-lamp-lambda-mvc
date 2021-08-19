@@ -11,7 +11,7 @@ sudo yum -y update
 sudo amazon-linux-extras install -y php7.2 
 sudo yum install -y php-mbstring
 
-git clone https://github.com/kukielp/aws-lambda-php-mvc.git
+git clone https://github.com/WeiZheng78/aws-lamp-lambda-mvc.git
 
 cd aws-lambda-php-mvc
 
@@ -47,3 +47,4 @@ Are how to deploy using AWS Cloud9 ID You may notice that I wrote a little MVC f
 Enjoy
 
 Resource:  https://github.com/aws-samples/php-examples-for-aws-lambda/tree/master/0.3-Replacing-The-HTTP-Web-Server-For-Traditional-PHP-Frameworks
+Resource:  https://github.com/kukielp/aws-lambda-php-mvc
