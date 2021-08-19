@@ -27,6 +27,7 @@ This installs PHP 7.2 , clones the repo and installs and composer, next we will 
 cd code
 php ../composer.phar require bref/bref
 php ../composer.phar require guzzlehttp/guzzle
+php ../composer.phar require aws/aws-sdk-php --with-all-dependencies
 ```
 
 Open the template.yaml update line 27 to align the region you wish to deploy into. You can look here for avaiable layers: https://runtimes.bref.sh/
