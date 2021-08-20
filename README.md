@@ -1,4 +1,6 @@
-# aws-lambda-php-mvc
+# aws-lamp-lambda-mvc
+
+LAMP here stands for Lambda Api-gateway Mysql PHP/Python/Perl etc.
 
 This repo deploys a Lambda function running PHP.  I am running this locally on MacOS 11.4 with PHP installed locally ( php I only used to install the dependencies ), however these instructions are about how to deploy using AWS Cloud9 IDE.
 
