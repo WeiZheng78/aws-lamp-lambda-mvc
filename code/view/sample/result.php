@@ -6,6 +6,7 @@
         <pre>
             <?php 
                 krumo($_rc);
+                print_r($_rc);
             ?>
         </pre>
         <a href="/Prod">Home</a>
