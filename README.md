@@ -39,7 +39,20 @@ cd ..
 sam deploy --guided
 ```
 
-Follow the instructions adn ensure you deploy to the region you specifed in the template.yaml
+```
+mysql -h database-1.clqonggx5zd5.ap-southeast-1.rds.amazonaws.com -u admin -p
+
+create database school;
+use school;
+
+CREATE TABLE IF NOT EXISTS `student`(
+   `id` INT UNSIGNED AUTO_INCREMENT,
+   `name` VARCHAR(100) NOT NULL,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+```
+Follow the instructions and ensure you deploy to the region you specifed in the template.yaml
 
 Once that is deployed you can open the WebEndpoint from the outputs section in your browser and you'll see the app running.
 
