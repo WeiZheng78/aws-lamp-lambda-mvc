@@ -2,6 +2,22 @@
 
 This repo deploys a Lambda function running PHP.  I am running this locally on MacOS 11.4 with PHP installed locally ( php I only used to install the dependencies ), however these instructions are about how to deploy using AWS Cloud9 IDE.
 
+First of all, please create a Mysql Instance as following, and import DB schema.
+
+```
+mysql -h database-1.clqonggx5zd5.ap-southeast-1.rds.amazonaws.com -u admin -p
+
+create database school;
+use school;
+
+CREATE TABLE IF NOT EXISTS `student`(
+   `id` INT UNSIGNED AUTO_INCREMENT,
+   `name` VARCHAR(100) NOT NULL,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+```
+
 Create a new CLoud9 Enviroment, the smallest isntance siz will be just fine, but ensure you select Amazon Linux 2.
 
 In Cloud 9 perform the following steps in the terminal:
@@ -39,19 +55,6 @@ cd ..
 sam deploy --guided
 ```
 
-```
-mysql -h database-1.clqonggx5zd5.ap-southeast-1.rds.amazonaws.com -u admin -p
-
-create database school;
-use school;
-
-CREATE TABLE IF NOT EXISTS `student`(
-   `id` INT UNSIGNED AUTO_INCREMENT,
-   `name` VARCHAR(100) NOT NULL,
-   PRIMARY KEY ( `id` )
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-```
 Follow the instructions and ensure you deploy to the region you specifed in the template.yaml
 
 Once that is deployed you can open the WebEndpoint from the outputs section in your browser and you'll see the app running.
